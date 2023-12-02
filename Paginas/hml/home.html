@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/home.css">
+    <script src="../js/home.js"></script>
+    <title>Anki</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="botao-alfabeto">
+            <button class="botao-anterior" onclick="mudarSlide('.botao-alfabeto', -1)">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30">
+                    <path
+                        d="M10.8284 12.0007L15.7782 16.9504L14.364 18.3646L8 12.0007L14.364 5.63672L15.7782 7.05093L10.8284 12.0007Z">
+                    </path>
+                </svg>
+            </button>
+            <div class="slides">
+                <div class="slide ativo" id="slide1">ひらがな<br>Hiraga</div>
+                <div class="slide" id="slide2">カタカナ<br>Katakana</div>
+            </div>
+            <button class="botao-proximo" onclick="mudarSlide('.botao-alfabeto', 1)">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                    <path
+                        d="M13.1714 12.0007L8.22168 7.05093L9.63589 5.63672L15.9999 12.0007L9.63589 18.3646L8.22168 16.9504L13.1714 12.0007Z">
+                    </path>
+                </svg>
+            </button>
+        </div>
+
+        <div class="botao-dificuldade">
+            <button class="botao-anterior" onclick="mudarSlide('.botao-dificuldade', -1)">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                    <path
+                        d="M10.8284 12.0007L15.7782 16.9504L14.364 18.3646L8 12.0007L14.364 5.63672L15.7782 7.05093L10.8284 12.0007Z">
+                    </path>
+                </svg>
+            </button>
+            <div class="slides">
+                <div class="slide ativo" id="slide1">Basíco</div>
+                <div class="slide" id="slide2">Intermediario</div>
+                <div class="slide" id="slide3">Avançado</div> 
+            </div>
+            <button class="botao-proximo" onclick="mudarSlide('.botao-dificuldade', 1)">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                    <path
+                        d="M13.1714 12.0007L8.22168 7.05093L9.63589 5.63672L15.9999 12.0007L9.63589 18.3646L8.22168 16.9504L13.1714 12.0007Z">
+                    </path>
+                </svg>
+            </button>
+        </div>
+        <div class="botao-baixo">
+            <div class="botao_ciculos">
+                <button type="button">000</button>
+            </div>
+            <div class="botao-inicio">
+                <button type="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="40" height="40">
+                        <path
+                            d="M16.3944 11.9998L10 7.73686V16.2628L16.3944 11.9998ZM19.376 12.4158L8.77735 19.4816C8.54759 19.6348 8.23715 19.5727 8.08397 19.3429C8.02922 19.2608 8 19.1643 8 19.0656V4.93408C8 4.65794 8.22386 4.43408 8.5 4.43408C8.59871 4.43408 8.69522 4.4633 8.77735 4.51806L19.376 11.5838C19.6057 11.737 19.6678 12.0474 19.5146 12.2772C19.478 12.3321 19.4309 12.3792 19.376 12.4158Z"
+                            fill="white" />
+                    </svg>
+                </button>
+            </div>
+            <div class="botao-dicionario">
+                <button type="button">dicionario</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
