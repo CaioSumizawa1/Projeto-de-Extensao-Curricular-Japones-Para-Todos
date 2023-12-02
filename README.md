@@ -2,6 +2,14 @@
 
 Extensão Curricular UNIFIL. O projeto tem como objetivo, ajudar as pessoas que não tem tempo e nem dinheiro para investir em um curso. Praticar alguns minutos do seu dia será essencial para ter um bom desenvolvimento no entendimento da língua, de forma simples e divertida você irá memorizar o alfabeto Hiragana e Katakana.
 
+INSERT INTO alfabeto (id, nome_alfabeto) VALUES 
+    (1, 'Hiragana Básico'),
+    (2, 'Hiragana Intermediário'),
+    (3, 'Hiragana Avançado'),
+    (4, 'Katakana Básico'),
+    (5, 'Katakana Intermediário'),
+    (6, 'Katakana Avançado');
+
 
 INSERT INTO caracter (id, romano, alfabeto_id) VALUES
     (1, 'a', 1),
@@ -50,3 +58,63 @@ INSERT INTO caracter (id, romano, alfabeto_id) VALUES
     (44, 'wa', 1),
     (45, 'n', 1),
     (46, 'wo', 1);
+
+INSERT INTO caracter (id, romano, alfabeto_id) VALUES 
+(47, 'ga', 2),
+(48, 'gi', 2),
+(49, 'gu', 2),
+(50, 'ge', 2),
+(51, 'go', 2),
+(52, 'za', 2),
+(53, 'ji', 2),
+(54, 'zu', 2),
+(55, 'ze', 2),
+(56, 'zo', 2),
+(57, 'da', 2),
+(58, 'ji', 2),
+(59, 'zu', 2),
+(60, 'de', 2),
+(61, 'do', 2),
+(62, 'ba', 2),
+(63, 'bi', 2),
+(64, 'bu', 2),
+(65, 'be', 2),
+(66, 'bo', 2),
+(67, 'pa', 2),
+(68, 'pi', 2),
+(69, 'pu', 2),
+(70, 'pe', 2),
+(71, 'po', 2);
+
+INSERT INTO caracter (id, romano, alfabeto_id) VALUES 
+(72, 'kya', 3),
+(73, 'kyu', 3),
+(74, 'kyo', 3),
+(75, 'gya', 3),
+(76, 'gyu', 3),
+(77, 'gyo', 3),
+(78, 'sha', 3),
+(79, 'shu', 3),
+(80, 'sho', 3),
+(81, 'jya', 3),
+(82, 'jyu', 3),
+(83, 'jyo', 3),
+(84, 'cha', 3),
+(85, 'chu', 3),
+(86, 'cho', 3),
+(87, 'nya', 3),
+(88, 'nyu', 3),
+(89, 'nyo', 3),
+(90, 'hya', 3),
+(91, 'hyu', 3),
+(92, 'hyo', 3),
+(93, 'mya', 3),
+(94, 'myu', 3),
+(95, 'myo', 3),
+(96, 'pya', 3),
+(97, 'pyu', 3),
+(98, 'pyo', 3),
+(99, 'rya', 3),
+(100, 'ryu', 3),
+(101, 'ryo', 3);
+
