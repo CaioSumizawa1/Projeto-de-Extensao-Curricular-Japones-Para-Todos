@@ -20,8 +20,8 @@
                 </svg>
             </button>
             <div class="slides">
-                <div class="slide ativo" id="slide1">ひらがな<br>Hiraga</div>
-                <div class="slide" id="slide2">カタカナ<br>Katakana</div>
+                <div class="slide ativo" id="slideAlfabeto1">ひらがな<br>Hiragana</div>
+                <div class="slide" id="slideAlfabeto2">カタカナ<br>Katakana</div>
             </div>
             <button class="botao-proximo" onclick="mudarSlide('.botao-alfabeto', 1)">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
@@ -41,9 +41,9 @@
                 </svg>
             </button>
             <div class="slides">
-                <div class="slide ativo" id="slide1">Basíco</div>
-                <div class="slide" id="slide2">Intermediario</div>
-                <div class="slide" id="slide3">Avançado</div> 
+                <div class="slide ativo" id="slideDificuldade1">Básico</div>
+                <div class="slide" id="slideDificuldade2">Intermediário</div>
+                <div class="slide" id="slideDificuldade3">Avançado</div>
             </div>
             <button class="botao-proximo" onclick="mudarSlide('.botao-dificuldade', 1)">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
@@ -57,7 +57,7 @@
             <div class="botao_ciculos">
                 <button type="button">000</button>
             </div>
-            <div class="botao-inicio">
+            <div class="botao-inicio" onclick="location.href='desafio.html';" style="cursor: pointer;">
                 <button type="button">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="40" height="40">
                         <path
@@ -67,7 +67,7 @@
                 </button>
             </div>
             <div class="botao-dicionario">
-                <button type="button">dicionario</button>
+                <button type="button">Dicionário</button>
             </div>
         </div>
     </div>
