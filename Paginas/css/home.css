@@ -5,6 +5,7 @@
     }
 
     .container {
+        box-shadow: black;
         height: 186px;
         width: 390px;
         position: absolute;

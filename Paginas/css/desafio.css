@@ -1,0 +1,55 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #E8AF6B;
+}
+
+.container {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  margin: 0 auto;
+  margin-top: 8%; /* Ajuste para centralizar verticalmente */
+  background-color: #E8AF6B;
+  border: 5px solid #D38233;
+  border-radius: 10px;
+  color: white;
+  font-size: 150px;
+  font-weight:550;
+  text-align: center;
+}
+
+input {
+  position: absolute;
+  bottom: 200px; /* Ajuste para posicionar abaixo da div */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 300px; /* Ajuste a largura conforme necessário */
+  padding: 10px;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+}
+
+.circle {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background: #ffffff;
+  border-radius: 50%;
+  top: calc(100% - 580px); /* Posição vertical centralizada */
+}
+
+.circle:nth-child(1) {
+  left: calc(50% - 55px); /* Posição horizontal ajustada */
+}
+
+.circle:nth-child(2) {
+  left: calc(50% - 15px); /* Posição horizontal ajustada */
+}
+
+.circle:nth-child(3) {
+  left: calc(50% + 25px); /* Posição horizontal ajustada */
+}
+
+
