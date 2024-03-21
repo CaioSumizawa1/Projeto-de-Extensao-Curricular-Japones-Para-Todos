@@ -5,105 +5,91 @@ function adicionarNovaVogal(embaralhado, acertos) {
     if (vogaisDisponiveis.length > 0) {
         var novaVogal = vogaisDisponiveis[Math.floor(Math.random() * vogaisDisponiveis.length)];
         embaralhado.push(novaVogal);
-        embaralhado.sort(() => Math.random() - 0.5); // Embaralha o array
+        // Não é mais necessário embaralhar o array aqui
     } else {
-        console.log("Todas as vogais foram acertadas três vezes!");
+        alert("Todas as vogais foram acertadas três vezes!");
     }
 }
 
 var vogaisPortugues = ['a', 'i', 'u', 'e', 'o',
-'ka', 'ki', 'ku', 'ke', 'ko',
-'sa', 'shi', 'su', 'se', 'so',
-'ta', 'chi', 'tsu', 'te', 'to',
-'na', 'ni', 'nu', 'ne', 'no',
-'ha', 'hi', 'fu', 'he', 'ho',
-'ma', 'mi', 'mu', 'me', 'mo',
-'ya', 'yu', 'yo',
-'ra', 'ri', 'ru', 're', 'ro',
-'wa', 'wo', 'n',
-'ga', 'gi', 'gu', 'ge', 'go',
-'za', 'ji', 'zu', 'ze', 'zo',
-'da', 'ji', 'zu', 'de', 'do',
-'ba', 'bi', 'bu', 'be', 'bo',
-'pa', 'pi', 'pu', 'pe', 'po',
-'kya', 'kyu', 'kyo',
-'sha', 'shu', 'sho',
-'cha', 'chu', 'cho',
-'nya', 'nyu', 'nyo',
-'hya', 'hyu', 'hyo',
-'mya', 'myu', 'myo',
-'rya', 'ryu', 'ryo',
-'gya', 'gyu', 'gyo',
-'ja', 'ju', 'jo',
-'ja', 'ju', 'jo',
-'bya', 'byu', 'byo',
-'pya', 'pyu', 'pyo'];
+        'ka', 'ki', 'ku', 'ke', 'ko',
+        'sa', 'shi', 'su', 'se', 'so',
+        'ta', 'chi', 'tsu', 'te', 'to',
+        'na', 'ni', 'nu', 'ne', 'no',
+        'ha', 'hi', 'fu', 'he', 'ho',
+        'ma', 'mi', 'mu', 'me', 'mo',
+        'ya', 'yu', 'yo',
+        'ra', 'ri', 'ru', 're', 'ro',
+        'wa', 'wo', 'n',
+        'ga', 'gi', 'gu', 'ge', 'go',
+        'za', 'ji', 'zu', 'ze', 'zo',
+        'da', 'de', 'do',
+        'ba', 'bi', 'bu', 'be', 'bo',
+        'pa', 'pi', 'pu', 'pe', 'po',
+      ];
 
-var vogaisJaponesas = [
-    'あ', 'い', 'う', 'え', 'お',
-    'か', 'き', 'く', 'け', 'こ',
-    'さ', 'し', 'す', 'せ', 'そ',
-    'た', 'ち', 'つ', 'て', 'と',
-    'な', 'に', 'ぬ', 'ね', 'の',
-    'は', 'ひ', 'ふ', 'へ', 'ほ',
-    'ま', 'み', 'む', 'め', 'も',
-    'や','ゆ', 'よ',
-    'ら', 'り', 'る', 'れ', 'ろ',
-    'わ','を', 'ん',
-    'が', 'ぎ', 'ぐ', 'げ', 'ご',
-    'ざ', 'じ', 'ず', 'ぜ', 'ぞ',
-    'だ', 'ぢ', 'づ', 'で', 'ど',
-    'ば', 'び', 'ぶ', 'べ', 'ぼ',
-    'ぱ', 'ぴ', 'ぷ', 'ぺ', 'ぽ',
-    'きゃ', 'きゅ', 'きょ',
-    'しゃ', 'しゅ', 'しょ',
-    'ちゃ', 'ちゅ', 'ちょ',
-    'にゃ', 'にゅ', 'にょ',
-    'ひゃ', 'ひゅ', 'ひょ',
-    'みゃ', 'みゅ', 'みょ',
-    'りゃ', 'りゅ', 'りょ',
-    'ぎゃ', 'ぎゅ', 'ぎょ',
-    'じゃ', 'じゅ', 'じょ',
-    'ぢゃ', 'ぢゅ', 'ぢょ',
-    'びゃ', 'びゅ', 'びょ',
-    'ぴゃ', 'ぴゅ', 'ぴょ'
-];
+        var vogaisJaponesas = [
+            'あ', 'い', 'う', 'え', 'お',
+            'か', 'き', 'く', 'け', 'こ',
+            'さ', 'し', 'す', 'せ', 'そ',
+            'た', 'ち', 'つ', 'て', 'と',
+            'な', 'に', 'ぬ', 'ね', 'の',
+            'は', 'ひ', 'ふ', 'へ', 'ほ',
+            'ま', 'み', 'む', 'め', 'も',
+            'や','ゆ', 'よ',
+            'ら', 'り', 'る', 'れ', 'ろ',
+            'わ','を', 'ん',
+            'が', 'ぎ', 'ぐ', 'げ', 'ご',
+            'ざ', 'じ', 'ず', 'ぜ', 'ぞ',
+            'だ', 'で', 'ど',
+            'ば', 'び', 'ぶ', 'べ', 'ぼ',
+            'ぱ', 'ぴ', 'ぷ', 'ぺ', 'ぽ',
+       
+        ];
 
-var embaralhado = vogaisJaponesas.slice(0, 5).sort(() => Math.random() - 0.5); // Seleciona 5 vogais japonesas e embaralha
+var embaralhado = vogaisJaponesas.slice(0, 6).sort(() => Math.random() - 0.5); // Seleciona 6 vogais japonesas e embaralha apenas uma vez
 var acertos = {};
 vogaisJaponesas.forEach(function(vogal) {
     acertos[vogal] = 0;
 });
 
-while (true) {
-    embaralhado.forEach(function(vogalJaponesa) {
-        console.log(vogalJaponesa);
-        var resposta = prompt("Digite a vogal correspondente em português: ");
-        if (resposta !== null) {
-            resposta = resposta.trim().toLowerCase();
-            if (vogaisPortugues.includes(resposta)) {
-                if (resposta === vogaisPortugues[vogaisJaponesas.indexOf(vogalJaponesa)]) {
-                    console.log("Certo!");
-                    if (acertos[vogalJaponesa] !== undefined) {
-                        acertos[vogalJaponesa]++;
-                        if (acertos[vogalJaponesa] === 3) {
-                            delete acertos[vogalJaponesa];
-                            embaralhado.splice(embaralhado.indexOf(vogalJaponesa), 1);
-                            adicionarNovaVogal(embaralhado, acertos);
-                        }
-                    }
-                } else {
-                    console.log("Errado! Tente novamente.");
-                }
-            } else {
-                console.log("Entrada inválida! Por favor, insira uma vogal em português.");
-            }
-        }
-    });
+var indexVogal = 0;
+var container = document.querySelector('.container');
 
-    if (Object.keys(acertos).length === 0) {
-        console.log("Parabéns! Você acertou todas as vogais japonesas três vezes!");
-        break;
+function mostrarVogalNaPagina() {
+    if (indexVogal < embaralhado.length) {
+        container.textContent = embaralhado[indexVogal];
+    } else {
+        container.textContent = "Fim do jogo!";
     }
 }
+
+function verificarResposta(resposta) {
+    if (indexVogal < embaralhado.length) {
+        var vogalJaponesa = embaralhado[indexVogal];
+        var vogalPortuguesaCorrespondente = vogaisPortugues[vogaisJaponesas.indexOf(vogalJaponesa)];
+        
+        if (resposta.trim().toLowerCase() === vogalPortuguesaCorrespondente) {
+            alert("Certo!");
+            acertos[vogalJaponesa]++;
+            if (acertos[vogalJaponesa] === 3) {
+                delete acertos[vogalJaponesa];
+            }
+            indexVogal++;
+            mostrarVogalNaPagina();
+            adicionarNovaVogal(embaralhado, acertos); // Chama a função para adicionar nova vogal
+        } else {
+            alert("Errado! Tente novamente.");
+        }
+    }
+}
+
+mostrarVogalNaPagina();
+var inputVogal = document.getElementById('inputVogal');
+inputVogal.addEventListener('keypress', function(event) {
+    if (event.key === 'Enter') {
+        verificarResposta(inputVogal.value);
+        inputVogal.value = '';
+    }
+});
 
