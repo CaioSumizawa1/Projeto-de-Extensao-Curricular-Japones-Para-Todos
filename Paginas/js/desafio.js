@@ -66,23 +66,23 @@ function mostrarVogalNaPagina() {
 
 function verificarResposta(resposta) {
     if (indexVogal < embaralhado.length) {
-        var vogalJaponesa = embaralhado[indexVogal];
-        var vogalPortuguesaCorrespondente = vogaisPortugues[vogaisJaponesas.indexOf(vogalJaponesa)];
-        
-        if (resposta.trim().toLowerCase() === vogalPortuguesaCorrespondente) {
-            alert("Certo!");
-            acertos[vogalJaponesa]++;
-            if (acertos[vogalJaponesa] === 3) {
-                delete acertos[vogalJaponesa];
-            }
-            indexVogal++;
-            mostrarVogalNaPagina();
-            adicionarNovaVogal(embaralhado, acertos); // Chama a função para adicionar nova vogal
-        } else {
-            alert("Errado! Tente novamente.");
+      var vogalJaponesa = embaralhado[indexVogal];
+      var vogalPortuguesaCorrespondente = vogaisPortugues[vogaisJaponesas.indexOf(vogalJaponesa)];
+    
+      if (resposta.trim().toLowerCase() === vogalPortuguesaCorrespondente) {
+        alert("Parabéns! Você acertou!");  // Modified message (correct)
+        acertos[vogalJaponesa]++;
+        if (acertos[vogalJaponesa] === 3) {
+          delete acertos[vogalJaponesa];
         }
+        indexVogal++;
+        mostrarVogalNaPagina();
+        adicionarNovaVogal(embaralhado, acertos); // Chama a função para adicionar nova vogal
+      } else {
+        alert("Ops! A vogal correta é: " + vogalPortuguesaCorrespondente); // Modified message (wrong)
+      }
     }
-}
+  }
 
 mostrarVogalNaPagina();
 var inputVogal = document.getElementById('inputVogal');
