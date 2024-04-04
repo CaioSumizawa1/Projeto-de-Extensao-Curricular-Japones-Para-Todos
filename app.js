@@ -20,6 +20,8 @@ app.get("/desafio2.html", function(req, res){
     res.sendFile(path.join(__dirname, "Paginas", "desafio2.html"));
 });
 
+
+
 app.listen(3000, '0.0.0.0', function() {
     console.log("Servidor rodando em http://localhost:3000/");
 });
